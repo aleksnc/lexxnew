@@ -1,0 +1,41 @@
+.main-logo{
+  position:                            relative;
+  color:                               @color-primary;
+  font-size:                           (@text-size-xl)-2;
+  font-weight:                         700;
+  font-family:                         @font-family-h;
+  padding:                             128px 0 0;
+  padding-left:                        0px;
+   background-image:                   url('@{img-path}label.png');
+  background-size:                     auto 120px;
+  background-position:                 50% 0;
+  background-repeat:                   no-repeat;
+  text-align:                          center;
+  &__wrapper{
+    width:                             240px;
+    margin:                            0 auto;
+    @media(min-width:768px) {
+      padding:                           20px;
+    }
+  }
+  &__two-color{
+    color: #fff;
+  }
+
+  &__slogan{
+
+    color:                             #fff;
+    font-weight:                       500;
+    font-size:                         @text-size-l;
+  }
+
+  @media(min-width:768px) {
+    padding:                           5px 0;
+    padding-left:                      50px;
+    background-position:               left;
+    background-size:                   auto 60px;
+    &__wrapper{
+      margin:                          0;
+    }
+  }
+}
