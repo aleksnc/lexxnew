@@ -1,0 +1,93 @@
+.how-we-work{
+  padding:                                      20px;
+  text-align:                                   center;
+  max-width:                                    1200px;
+  margin:                                       0 auto;
+
+  &__wrapper{
+    float:                                      left;
+    width:                                      100%;
+    background-color:                           #fff;
+  }
+  &__title{
+    &:extend(.title);
+  }
+  &__description{
+    font-size:                                   @text-size-l;
+  }
+  &__steps{
+    display:                                     block;
+  }
+  &__step{
+    position: relative;
+    background-image:                  url('@{img-path}icon/112_ie.png');
+    background-image:                  url('@{img-path}icon/112.png');
+    background-size:                   128px;
+    background-repeat:                 no-repeat;
+    background-position:               center 0;
+    padding-top:                       170px;
+    float: left;
+
+    &:after{
+      content: "";
+      display: block;
+      border: 6px solid #000;
+      width: 25px;
+      height: 25px;
+      border-width: 8px 8px 0 0;
+      transform: rotate(135deg);
+      margin: 20px auto;
+
+      @media (min-width: 768px) {
+        position: absolute;
+        top: 4%;
+        right: -15px;
+        transform: rotate(45deg);
+      }
+
+      @media (min-width: 1024px) {
+        position: absolute;
+        top: 10%;
+        right: -15px;
+        transform: rotate(45deg);
+      }
+    }
+
+    &:first-child{
+      margin-top: 10px;
+    }
+    &:nth-child(2){
+      background-image:                  url('@{img-path}icon/63_ie.png');
+      background-image:                  url('@{img-path}icon/63.png');
+    }
+
+    &:nth-child(3){
+      background-image:                  url('@{img-path}icon/102.png');
+    }
+
+    &:last-child{
+      background-image:                  url('@{img-path}icon/106_ie.png');
+      background-image:                  url('@{img-path}icon/106.png');
+      &:after{
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      width:                             24%;
+      background-size:                   50%;
+      &:first-child{
+        margin-top:                      0px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      width:                             23.7%;
+      margin-left:                       17px;
+      &:first-child{
+        margin-top:                      0px;
+        margin-left:                     0;
+      }
+    }
+  }
+}

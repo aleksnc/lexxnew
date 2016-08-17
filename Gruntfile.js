@@ -1,5 +1,12 @@
 module.exports = function(grunt){
   grunt.initConfig({
+    sprite:{
+      all: {
+        src: 'source/img/icon/*.png',
+        dest: 'source/img/spritesheet.png',
+        destCss: 'source/css/sprite.less'
+      }
+    },
     image: {
       static: {
         options: {
@@ -18,7 +25,8 @@ module.exports = function(grunt){
         files: [{
           expand: true,
           cwd: 'source/img/',
-          src: ['**/*.{png,jpg,gif,svg}'],
+          src: '**/*.{png,jpg,gif,svg}',
+          //src: '*.{png,jpg,gif,svg}',
           dest: 'dest/img/'
         }]
       }
@@ -47,14 +55,14 @@ module.exports = function(grunt){
         }
       }
     },
-    cmq: {
+    merge_media: {
       options: {
-        log: false
+        compress: true,
+        logFile: true
       },
-      your_target: {
-        files: {
-          'tmp': ['dest/css/*.css']
-        }
+      files:{
+        src: 'dest/css/*.css',
+        dest: 'dest/css/'
       }
     },
     autoprefixer:{
@@ -108,7 +116,8 @@ module.exports = function(grunt){
         }
       },
       imagemin: {
-        files: ['source/**/*.{png,jpg,gif}'],
+        files: ['source/img/**/*.{png,jpg,gif}'],
+        dest: 'dest/img/',
         tasks: ['image'],
       }
     },
@@ -128,7 +137,8 @@ module.exports = function(grunt){
     }
   });
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-combine-media-queries');
+  grunt.loadNpmTasks('grunt-spritesmith');
+  grunt.loadNpmTasks('grunt-merge-media');
   grunt.loadNpmTasks('grunt-image');
   grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -137,11 +147,12 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.registerTask('default', [
     'image',
+    'sprite',
     'copy',
     'pug',
     'less',
     'autoprefixer',
-    'cmq',
+    'merge_media',
     'browserSync',
     'watch'
   ]);

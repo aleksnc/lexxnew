@@ -1,0 +1,67 @@
+.team{
+  padding: 20px 20px 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__wrapper{
+    background-color:                            @gray-light;
+    float:                                       left;
+    width:                                       100%;
+  }
+
+  &__title{
+    &:extend(.title);
+  }
+
+  &__description{
+    font-size:                                   @text-size-l;
+    margin-bottom:                               30px;
+  }
+
+  &__workers{
+    text-align: left;
+  }
+
+  &__workman{
+    background: #fff;
+    height:  230px;
+    width: 49%;
+    padding: 15px;
+    text-align: left;
+    display: inline-block;
+
+    &:last-child{
+      margin-left: 18px;
+    }
+  }
+
+  &__workman-img{
+    height: 100%;
+    border-radius: 100px;
+    display: inline-block;
+  }
+  &__workman-info{
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  &__workman-name{
+    font-size: (@text-size-l)+2px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__workman-post{
+    font-size: @text-size;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__workman-about{
+
+  }
+}

@@ -1,0 +1,23 @@
+.our-services{
+  width:                               100%;
+  max-width:                           1200px;
+  margin:                              0 auto;
+
+  @media (min-width: 768px) {
+    padding:                           0 20px;
+  }
+
+  @media (min-width: 1200px) {
+    padding:                           0;
+  }
+
+  &__wrapper{
+    width:                             100%;
+    background-color:                  #ded8d3;
+  }
+
+  &__title{
+    &:extend(.title);
+    padding: 40px 0;
+  }
+}

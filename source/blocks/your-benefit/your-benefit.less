@@ -1,0 +1,88 @@
+.your-benefit{
+  width:                                           100%;
+  position:                                        relative;
+  text-align:                                      right;
+
+  &__wrapper{
+    position:                                       relative;
+    background-image:                               url('@{img-path}6.jpg');
+    background-repeat:                              no-repeat;
+    background-size:                                cover;
+    background-position:                            center;
+    width:                                          100%;
+    background-attachment:                          fixed;
+    float:                                          left;
+  }
+
+    &:before{
+      content:                                      "";
+      display:                                      block;
+      background-color:                             rgba(0, 0, 0, 0.5);
+      width:                                        100%;
+      height:                                       100%;
+      position:                                     absolute;
+    }
+
+  &__title{
+    &:extend(.title);
+    width:                                           100%;
+    padding:                                         40px 0;
+    margin:                                          0 auto;
+    color:                                           #fff;
+    font-weight:                                     600;
+    text-align:                                      left;
+  }
+
+  &__list{
+    display:                                         inline-block;
+    background-color:                                rgba(113, 197, 209, 0.78);
+    padding:                                         0 30px;
+    padding-bottom:                                  30px;
+    color:                                           #fff;
+    position:                                        relative;
+    width:                                           100%;
+    text-align:                                      left;
+
+    @media(min-width: 768px){
+      width: 50%;
+    }
+      li{
+        margin-bottom:                               25px;
+        padding-left:                                70px;
+        background-image:                            url('@{img-path}icon/48--white.png');
+        background-repeat:                           no-repeat;
+        background-size:                             64px;
+        background-position:                         left;
+
+        &:first-child{
+          margin-bottom:                             0px;
+          padding-left:                              0px;
+          background-image:                          none;
+        }
+
+        &:nth-child(3){
+          background-image:                           url('@{img-path}icon/95--white.png');
+        }
+
+        &:nth-child(4){
+          background-image:                           url('@{img-path}icon/169--white.png');
+        }
+
+        &:nth-child(5){
+          background-image:                           url('@{img-path}icon/172--white.png');
+        }
+      }
+  }
+
+  &__list-title{
+    font-size:                                       @text-size-l;
+    font-weight:                                     600;
+    display:                                         block;
+    padding-bottom:                                  5px;
+  }
+
+  &__list-content{
+    font-size:                                       @text-size-l;
+    font-weight:                                     500;
+  }
+}

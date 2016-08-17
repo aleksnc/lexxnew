@@ -1,0 +1,33 @@
+.countdown-action{
+  text-align:                         left;
+
+  &__wrapper{
+    padding:                           40px;
+    background-color:                  @color-semi-1;
+    margin-bottom:                     20px;
+    max-width:                         702px;
+    min-height:                        371px;
+
+    @media (min-width:1200px ) {
+      margin: 0;
+      margin-right: 20px;
+    }
+  }
+  &__title{
+    display:                           block;
+    margin-bottom:                     10px;
+    font-size:                         (@text-size-xl)-6;
+    color:                             @color-primary;
+  }
+
+  &__description{
+    display:                           block;
+    margin-bottom:                     10px;
+    font-size:                         @text-size;
+  }
+
+  &__togo{
+    color:                             @color-primary;
+    font-size:                         19px;
+  }
+}
