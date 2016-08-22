@@ -1,0 +1,32 @@
+.maps{
+  padding:                                      20px;
+  text-align:                                   center;
+  margin:                                       0 auto;
+  z-index: 2;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 570px;
+  margin-top: 10px;
+
+  &__wrapper{
+    float:                                      left;
+    width:                                      100%;
+    background-color:                           #fff;
+  }
+  &__title{
+    &:extend(.title);
+  }
+  &__description{
+    font-size:                                   @text-size-l;
+  }
+
+  &__ya{
+    @media(min-width: 768px){
+      margin-top: -138px;
+    }
+  }
+}
+
+.ymaps-2-1-41-controls__toolbar{
+  display: none;
+}

@@ -1,0 +1,22 @@
+---
+# Merging queries in dest/css/owl.carousel.css
+
+---
+# Merging queries in dest/css/style.css
+
+Found 33 media queries from 274 rules
+
+`(min-width: 768px)` x18
+
+`(min-width: 1200px)` x12
+
+`(min-width: 1024px)` x3
+
+---
+# Merging queries in dest/css/styles.css
+
+Found 2 media queries from 146 rules
+
+`(min-width: 768px)` x1
+
+`(min-width: 1200px)` x1

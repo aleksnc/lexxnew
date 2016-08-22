@@ -1,9 +1,13 @@
 .application-form{
-  max-width:                            436px;
   width:                                100%;
   padding:                              20px;
   background-color:                    @color-semi-1;
   text-align:                           left;
+  
+  @media (min-width: 1200px) {
+    max-width:                            436px;
+    float: left;
+  }
 
   &__title{
     font-size:                         (@text-size-l)+4px;
