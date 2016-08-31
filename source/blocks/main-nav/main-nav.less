@@ -5,6 +5,10 @@
   margin:                         0 20px;
   float:                          right;
 
+  @media (min-width: 768px) {
+    margin: 20px 0;
+  }
+
   &__list{
     color:                        #fff;
     font-size:                    @text-size;
@@ -22,11 +26,11 @@
 
   &__link{
     display:                      inline-block;
-    margin:                       5px 80px;
+    margin:                       5px 89px;
     padding:                      5px;
 
     &:hover{
-      color:                      @color-second;
+      color:                      #3e8047;
     }
 
     &:first-child{
@@ -46,15 +50,12 @@
     display:                      block;
     width:                        25px;
     height:                       25px;
-    background:                   url('@{img-path}icon-burger.png') no-repeat;
+    background-image:             url('@{img-path}icon-burger.png');
     align-self:                   center;
     cursor:                       pointer;
     @media (min-width: 1200px) {
       display:                    none;
 
     }
-  }
-  @media (min-width: 768px) {
-      margin: 20px;
   }
 }

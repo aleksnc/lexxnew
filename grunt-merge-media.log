@@ -4,11 +4,11 @@
 ---
 # Merging queries in dest/css/style.css
 
-Found 33 media queries from 274 rules
+Found 39 media queries from 294 rules
 
-`(min-width: 768px)` x18
+`(min-width: 768px)` x21
 
-`(min-width: 1200px)` x12
+`(min-width: 1200px)` x15
 
 `(min-width: 1024px)` x3
 
