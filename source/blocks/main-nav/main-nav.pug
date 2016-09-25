@@ -1,11 +1,12 @@
-nav.main-nav
-    ul.main-nav__list
-        li.main-nav__link
-            a(href="#") О НАС
-        li.main-nav__link
-            a(href="#") Физическим лицам
-        li.main-nav__link
-            a(href="#") Юридическим лицам
-        li.main-nav__link
-            a(href="#") Контакты
-    span#main-nav__burger.main-nav__burger(onclick="burgerToggl()")
+div.main-nav__wrapper
+    nav.main-nav
+        span#main-nav__burger.main-nav__burger(onclick="burgerToggl()")
+        ul.main-nav__list
+            li.main-nav__link.btn.btn--menu
+                a(href="#") О НАС
+            li.main-nav__link.btn.btn--menu
+                a(href="#") Физическим лицам
+            li.main-nav__link.btn.btn--menu
+                a(href="#") Юридическим лицам
+            li.main-nav__link.btn.btn--menu
+                a(href="#") Контакты

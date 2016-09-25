@@ -19,4 +19,14 @@ $(document).ready(function(){
         }
     });
 
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+        if (scroll >= '50') {
+            $(".main-nav__wrapper").css("background","rgba(158, 178, 205, 0.80)");
+        } else {
+            $(".main-nav__wrapper").css("background","none");
+        }
+    });
+
 });

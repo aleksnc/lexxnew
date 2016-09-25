@@ -3,13 +3,13 @@
   margin: 0 auto;
   &__wrapper{
     background-color:                  #fff;
-    padding:                           20px;
+    padding:                           20px 15px;
     width:                             100%;
-    float:                             left;
 
-    @media (min-width: 1200px) {
-      padding:                           20px;
+    @media (min-width: 1024px) {
+      padding:                           51px 15px;
     }
+
   }
 
   &__list{
@@ -21,7 +21,12 @@
     @media (min-width: 768px) {
       flex-wrap:                       wrap;
       flex-direction:                  row;
+      justify-content:                 space-around;
 
+    }
+
+    @media (min-width: 1024px) {
+      justify-content: space-between;
     }
   }
 
@@ -29,16 +34,16 @@
     width: 100%;
     padding-left:                      80px;
     background-image:                  url('@{img-path}icon/59--red.png');
-    background-size:                   64px auto;
+    background-size:                   67px auto;
     background-repeat:                 no-repeat;
     background-position:               0 center;
 
     @media (min-width: 768px) {
-      width: 41%;
+      width: 34%;
 
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
       width: auto;
 
     }

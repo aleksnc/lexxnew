@@ -8,16 +8,18 @@
     <script src="js/jquery-1.10.1.min.js"></script>
   </head>
   <body>
+    <div class="main-nav__wrapper">
+      <nav class="main-nav"><span class="main-nav__burger" id="main-nav__burger" onclick="burgerToggl()"></span>
+        <ul class="main-nav__list">
+          <li class="main-nav__link btn btn--menu"><a href="#">О НАС</a></li>
+          <li class="main-nav__link btn btn--menu"><a href="#">Физическим лицам</a></li>
+          <li class="main-nav__link btn btn--menu"><a href="#">Юридическим лицам</a></li>
+          <li class="main-nav__link btn btn--menu"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="page-header__wrapper">
       <div class="page-header">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__link"><a href="#">О НАС</a></li>
-            <li class="main-nav__link"><a href="#">Физическим лицам</a></li>
-            <li class="main-nav__link"><a href="#">Юридическим лицам</a></li>
-            <li class="main-nav__link"><a href="#">Контакты</a></li>
-          </ul><span class="main-nav__burger" id="main-nav__burger" onclick="burgerToggl()"></span>
-        </nav>
         <div class="main-logo__wrapper">
           <div class="main-logo">ЛЭКС<span class="main-logo__two-color">  СПб</span>
             <div class="main-logo__slogan"> Ваш верный друг</div>
@@ -48,7 +50,7 @@
                 <option>3 НДФЛ</option>
                 <option>Налогообложение</option>
                 <option>Бухгалтерский учет</option>
-              </select><a class="application-form__btn" href="javascript:void(0);">Записаться</a>
+              </select><a class="application-form__btn btn btn--form" href="javascript:void(0);">Записаться</a>
             </label>
           </section>
         </div>
@@ -69,29 +71,28 @@
         <h1 class="our-services__title">НАШИ УСЛУГИ</h1>
         <div class="services">
           <div class="services__service">
-            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Регистрация ООО и ИП</span><a class="services__service-btn" href="#">Перейти</a>
+            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Регистрация ООО и ИП</span><span class="services__service-content">Подробное описание проекта, интересные факты.</span><a class="btn btn--service" href="#">Перейти</a>
           </div>
           <div class="services__service">
-            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">3 НДФЛ</span><a class="services__service-btn" href="#">Перейти</a>
+            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">3 НДФЛ</span><span class="services__service-content">Подробное описание проекта, интересные факты.</span><a class="btn btn--service" href="#">Перейти</a>
           </div>
           <div class="services__service">
-            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Бухгалтерское обслуживание</span><a class="services__service-btn" href="#">Перейти</a>
+            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Бухгалтерское обслуживание</span><span class="services__service-content">Подробное описание проекта, интересные факты.</span><a class="btn btn--service" href="#">Перейти</a>
           </div>
           <div class="services__service">
-            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Разовые услуги</span><a class="services__service-btn" href="#">Перейти</a>
+            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Разовые услуги</span><span class="services__service-content">Подробное описание проекта, интересные факты.</span><a class="btn btn--service" href="#">Перейти</a>
           </div>
           <div class="services__service services__service--50">
-            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Разовые услуги</span><a class="services__service-btn" href="#">Перейти</a>
+            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Разовые услуги</span><span class="services__service-content">Подробное описание проекта, интересные факты.</span><a class="btn btn--service" href="#">Перейти</a>
           </div>
           <div class="services__service services__service--50">
-            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Разовые услуги</span><a class="services__service-btn" href="#">Перейти</a>
+            <div class="services__service-img" style="background-image: url('../img/4.jpg')"></div><span class="services__service-title">Разовые услуги</span><span class="services__service-content">Подробное описание проекта, интересные факты.</span><a class="btn btn--service" href="#">Перейти</a>
           </div>
         </div>
       </section>
     </div>
     <div class="action__wrapper">
       <div class="action">
-        <h1 class="action__title">АКЦИЯ</h1>
         <div class="countdown-action__wrapper">
           <div class="countdown-action">
             <div class="countdown-action__title">ОСТАВЬТЕ ЗАЯВКУ</div>
@@ -103,11 +104,11 @@
           </div>
         </div>
         <section class="application-form">
-          <div class="application-form__title">Бесплатная консультация</div>
+          <div class="application-form__title">Регистрация</div>
           <label class="application-form__label"><span class="star">Имя</span>
             <input class="application-form__input" type="text"><span class="star">E-mail</span>
             <input class="application-form__input" type="text"><span class="star">Телефон</span>
-            <input class="application-form__input" type="text"><a class="application-form__btn" href="javascript:void(0);">Записаться</a>
+            <input class="application-form__input" type="text"><a class="application-form__btn btn btn--form" href="javascript:void(0);">Записаться</a>
           </label>
         </section>
       </div>
@@ -125,7 +126,8 @@
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
-            </ul><a class="our-rates__btn" href="javascript:void(0);">Отправить заявку!</a>
+              <li>Быстро и качественно</li>
+            </ul><a class="our-rates__btn btn btn--one" href="javascript:void(0);">Отправить заявку!</a>
           </article>
           <article class="our-rates__rate">
             <div class="our-rates__rate-title our-rates__rate-title--two">Стандарт</div>
@@ -135,7 +137,8 @@
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
-            </ul><a class="our-rates__btn our-rates__btn--two" href="javascript:void(0);">Отправить заявку!</a>
+              <li>Быстро и качественно</li>
+            </ul><a class="our-rates__btn btn btn--two" href="javascript:void(0);">Отправить заявку!</a>
           </article>
           <article class="our-rates__rate">
             <div class="our-rates__rate-title our-rates__rate-title--three">Бизнес</div>
@@ -145,7 +148,8 @@
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
-            </ul><a class="our-rates__btn our-rates__btn--three" href="javascript:void(0);">Отправить заявку!</a>
+              <li>Быстро и качественно</li>
+            </ul><a class="our-rates__btn btn btn--three" href="javascript:void(0);">Отправить заявку!</a>
           </article>
           <article class="our-rates__rate">
             <div class="our-rates__rate-title our-rates__rate-title--four"> Конструктор</div>
@@ -155,7 +159,8 @@
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
               <li>Быстро и качественно</li>
-            </ul><a class="our-rates__btn" href="javascript:void(0);">Отправить заявку!</a>
+              <li>Быстро и качественно</li>
+            </ul><a class="our-rates__btn btn btn--one" href="javascript:void(0);">Отправить заявку!</a>
           </article>
         </section>
       </div>
@@ -179,7 +184,7 @@
           </div>
           <div class="how-we-work__step">
             <div class="how-we-work__step-title">Внедрение</div>
-            <div class="how-we-work__step-description">Наши квалифицированные специалисты внедряют в ваше предприятие заказанные вами решение.</div>
+            <div class="how-we-work__step-description">Наши квалифицированные специалисты внедряют в ваше  решение.</div>
           </div>
         </div>
       </div>
@@ -325,9 +330,9 @@
           <div class="main-logo">ЛЭКС<span class="main-logo__two-color">  СПб</span>
             <div class="main-logo__slogan"> Ваш верный друг</div>
           </div>
-        </div><a class="page-footer__social-link" href="">мы в вконтакте</a>
+        </div>
         <div class="page-footer__schedule"></div>
-        <div class="page-footer__contacts"><span>М. Владимирская, ул. Правды дом 1</span><a href="tel:+78121234567">+7 (812) 123-45-67</a><a href="tel:+78121234567">+7 (812) 123-45-67</a></div>
+        <div class="page-footer__contacts"><a class="page-footer__social-link" href="">наша группа в VK</a><span class="adress">М. Владимирская, ул. Правды дом 1</span><a class="phone" href="tel:+78121234567">+7 (812) 123-45-67</a><a class="phone" href="tel:+78121234567">+7 (812) 123-45-67</a></div>
       </div>
     </div>
     <script src="js/owl.carousel.min.js"></script>

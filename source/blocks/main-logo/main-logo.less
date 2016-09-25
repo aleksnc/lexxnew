@@ -11,17 +11,24 @@
   background-position:                 50% 0;
   background-repeat:                   no-repeat;
   text-align:                          center;
+
   &__wrapper{
     width:                             auto;
     margin:                            20px auto;
+
     @media(min-width:768px) {
       padding:                           0 20px;
       margin:                            20px auto;
-      float:                             left;
+    }
+
+    @media(min-width:768px) {
+      margin:                            0;
     }
 
     @media(min-width:1200px) {
-      margin:                            0px;
+      padding:                           0;
+      align-self: center;
+      height: 77px;
     }
 
   }

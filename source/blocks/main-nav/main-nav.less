@@ -1,12 +1,20 @@
 .main-nav{
-  display:                        inline-block;
+  display:                        block;
+  position:                       relative;
   font-family:                    @font-family-h;
-  height:                         59px;
-  margin:                         0 20px;
-  float:                          right;
+  max-width:                      1200px;
+  margin:                         0 15px;
+  text-align:                     right;
 
-  @media (min-width: 768px) {
-    margin: 20px 0;
+  @media (min-width: 1200px) {
+    margin:                       0  auto;
+  }
+
+  &__wrapper{
+    padding:                     10px 0;
+    position:                    relative;
+    z-index:                     100;
+    width:                       100%;
   }
 
   &__list{
@@ -16,44 +24,38 @@
     font-weight:                  700;
     letter-spacing:               2px;
     display:                      none;
+    flex-direction:               column;
 
-    @media (min-width: 1200px) {
-      display:                    block;
+    @media (min-width: 1024px) {
+      display:                    flex;
       text-align:                 center;
-      padding-top:                10px;
+      justify-content:            space-between ;
+      flex-direction:             row;
     }
   }
 
-  &__link{
-    display:                      inline-block;
-    margin:                       5px 89px;
-    padding:                      5px;
-
-    &:hover{
-      color:                      #3e8047;
-    }
+  &__link {
+    border-radius: 0;
+    font-weight: 100;
+    margin: 0 10px;
 
     &:first-child{
-      margin-left:               0;
+      margin-left: 0;
     }
+
     &:last-child{
-      margin-right:              0;
+      margin-right: 0;
     }
-
-    &> a{
-      text-decoration: underline;
-    }
-
   }
 
   &__burger{
-    display:                      block;
+    display:                      inline-block;
     width:                        25px;
     height:                       25px;
     background-image:             url('@{img-path}icon-burger.png');
     align-self:                   center;
     cursor:                       pointer;
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
       display:                    none;
 
     }
