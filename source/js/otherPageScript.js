@@ -1,6 +1,10 @@
 $(document).ready(function(){
   $('.other-nav__list li>ul').css('display','none');
   $('.other-nav__link').click(function(){
+    $(this).parent().find('.other-nav__link').removeClass('click');
+    $(this).addClass('click');
+
+
     if($(this).parent().hasClass('active')){
     $(this).addClass('active');
       if($(this).children('ul').hasClass('active')){
@@ -13,6 +17,9 @@ $(document).ready(function(){
       }
       return false;
     } else{
+      $('.other-nav__link').removeClass('click');
+      $(this).addClass('click');
+      
       if($(this).hasClass('active')){
         $('.other-nav__list li>ul').css('display','none');
         $('*').removeClass('active');

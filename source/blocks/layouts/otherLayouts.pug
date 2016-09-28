@@ -8,8 +8,10 @@ html(lang="ru")
         script(src="js/jquery-1.10.1.min.js")
 
     body
-        include ../other-nav/other-nav.pug
+        include ../other-header/other-header.pug
         block content
-        include ../page-footer/page-footer.pug
-        script(src="js/owl.carousel.min.js")
-        script(src="js/otherPageScript.js")
+        .other__footer
+            include ../page-footer/page-footer.pug
+            script(src="js/owl.carousel.min.js")
+            script(src="js/otherPageScript.js")
+
