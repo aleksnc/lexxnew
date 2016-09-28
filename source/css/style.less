@@ -25,7 +25,7 @@
 
 /*=====Другие страницы=====*/
 .other{
-  padding: 0 20px;
+  padding: 30px 20px;
 
   &__wrapper{
     display: flex;
@@ -35,6 +35,55 @@
     .page-footer{
       max-width: 100%;
       padding: 0 20px;
+    }
+  }
+
+  h1, h2, h3{
+    color: #434f5d;
+    margin: 0;
+    margin: 10px 0;
+  }
+
+  a{
+    color: @color-tertiary;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  ol li{
+    list-style: decimal;
+  }
+  ul{
+    padding-left: 40px;
+  }
+  ul li{
+    list-style: square;
+  }
+
+  table{
+    background: #434f5d;
+
+    tbody{
+
+      background: #434f5d;
+
+      th{
+        background: #fff;
+        padding: 10px;
+        border: 2px solid #434f5d;
+        color: #000;
+        font-size: 17px;
+      }
+
+      td{
+        background: #fff;
+        padding: 10px;
+        border: 2px solid #434f5d;
+        color: #000;
+        font-size: 17px;
+      }
     }
   }
 }

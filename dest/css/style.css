@@ -1129,6 +1129,7 @@ h2 {
   font-size: 18px;
 }
 .main-logo {
+  display: block;
   position: relative;
   color: #f16c4d;
   font-size: 32px;
@@ -1182,6 +1183,9 @@ h2 {
     background-position: left;
     background-size: auto 75px;
   }
+}
+.main-logo:hover {
+  color: #f16c4d;
 }
 .main-nav {
   display: block;
@@ -2021,7 +2025,7 @@ h2 {
 }
 /*=====Другие страницы=====*/
 .other {
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 .other__wrapper {
   display: -webkit-box;
@@ -2032,6 +2036,48 @@ h2 {
 .other__footer .page-footer {
   max-width: 100%;
   padding: 0 20px;
+}
+.other h1,
+.other h2,
+.other h3 {
+  color: #434f5d;
+  margin: 0;
+  margin: 10px 0;
+}
+.other a {
+  color: #e25440;
+}
+.other a:hover {
+  text-decoration: underline;
+}
+.other ol li {
+  list-style: decimal;
+}
+.other ul {
+  padding-left: 40px;
+}
+.other ul li {
+  list-style: square;
+}
+.other table {
+  background: #434f5d;
+}
+.other table tbody {
+  background: #434f5d;
+}
+.other table tbody th {
+  background: #fff;
+  padding: 10px;
+  border: 2px solid #434f5d;
+  color: #000;
+  font-size: 17px;
+}
+.other table tbody td {
+  background: #fff;
+  padding: 10px;
+  border: 2px solid #434f5d;
+  color: #000;
+  font-size: 17px;
 }
 .other-nav__wrapper {
   padding: 30px 0;
